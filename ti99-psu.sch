@@ -1,0 +1,246 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Male J6
+U 1 1 5F9C0B40
+P 7300 2300
+F 0 "J6" H 7272 2274 50  0000 R CNN
+F 1 "TI-99/4A Power" H 7272 2183 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical" H 7300 2300 50  0001 C CNN
+F 3 "~" H 7300 2300 50  0001 C CNN
+	1    7300 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5F9C2BC3
+P 1600 2200
+F 0 "J1" H 1708 2381 50  0000 C CNN
+F 1 "DC +12V IN" H 1708 2290 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1600 2200 50  0001 C CNN
+F 3 "~" H 1600 2200 50  0001 C CNN
+	1    1600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DPST SW1
+U 1 1 5F9CE001
+P 2600 2300
+F 0 "SW1" H 2600 2625 50  0000 C CNN
+F 1 "SW_DPST" H 2600 2534 50  0000 C CNN
+F 2 "" H 2600 2300 50  0001 C CNN
+F 3 "~" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2200 2400 2200
+Wire Wire Line
+	1800 2300 2150 2300
+Wire Wire Line
+	2150 2300 2150 2400
+Wire Wire Line
+	2150 2400 2400 2400
+Wire Wire Line
+	2800 2200 3150 2200
+Wire Wire Line
+	2800 2400 3050 2400
+Wire Wire Line
+	3050 2400 3050 2300
+Wire Wire Line
+	3050 2300 4000 2300
+Wire Wire Line
+	3050 2400 3050 3000
+Wire Wire Line
+	3050 3000 4000 3000
+Connection ~ 3050 2400
+Wire Wire Line
+	3150 2200 3150 2900
+Wire Wire Line
+	3150 2900 4000 2900
+Connection ~ 3150 2200
+Wire Wire Line
+	3150 2200 4000 2200
+$Comp
+L power:+12V #PWR0104
+U 1 1 5F9D63BA
+P 3150 1950
+F 0 "#PWR0104" H 3150 1800 50  0001 C CNN
+F 1 "+12V" H 3165 2123 50  0000 C CNN
+F 2 "" H 3150 1950 50  0001 C CNN
+F 3 "" H 3150 1950 50  0001 C CNN
+	1    3150 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3000 3050 3150
+Connection ~ 3050 3000
+Wire Wire Line
+	3150 1950 3150 2200
+Wire Wire Line
+	5850 2300 6350 2300
+Wire Wire Line
+	6350 2300 6350 3000
+Wire Wire Line
+	6350 3000 5850 3000
+$Comp
+L power:GND #PWR0105
+U 1 1 5F9D8E0C
+P 7000 2650
+F 0 "#PWR0105" H 7000 2400 50  0001 C CNN
+F 1 "GND" H 7005 2477 50  0000 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2400 7000 2400
+Wire Wire Line
+	7000 2400 7000 2650
+Wire Wire Line
+	5850 2900 6450 2900
+Wire Wire Line
+	6450 2900 6450 2500
+Wire Wire Line
+	6450 2500 7100 2500
+Wire Wire Line
+	5850 2200 7100 2200
+$Comp
+L power:+12V #PWR0106
+U 1 1 5F9DA296
+P 7000 1950
+F 0 "#PWR0106" H 7000 1800 50  0001 C CNN
+F 1 "+12V" H 7015 2123 50  0000 C CNN
+F 2 "" H 7000 1950 50  0001 C CNN
+F 3 "" H 7000 1950 50  0001 C CNN
+	1    7000 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2300 7000 2300
+Wire Wire Line
+	7000 2300 7000 1950
+Text Label 6650 2200 0    50   ~ 0
+-5V
+Text Label 6650 2500 0    50   ~ 0
++5V
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F9C3CFA
+P 4200 2200
+F 0 "J2" H 4350 2400 50  0000 R CNN
+F 1 "-5V Regulator In" H 4600 2300 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 2200 50  0001 C CNN
+F 3 "~" H 4200 2200 50  0001 C CNN
+	1    4200 2200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5F9CA93C
+P 5650 2200
+F 0 "J4" H 5758 2381 50  0000 C CNN
+F 1 "-5V Regulator Out" H 5758 2290 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 5650 2200 50  0001 C CNN
+F 3 "~" H 5650 2200 50  0001 C CNN
+	1    5650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J5
+U 1 1 5F9CBF29
+P 5650 2900
+F 0 "J5" H 5758 3081 50  0000 C CNN
+F 1 "+5V Regulator Out" H 5758 2990 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 5650 2900 50  0001 C CNN
+F 3 "~" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5F9C4CC1
+P 4200 2900
+F 0 "J3" H 4350 3100 50  0000 R CNN
+F 1 "+5V Regulator In" H 4600 3000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 4200 2900 50  0001 C CNN
+F 3 "~" H 4200 2900 50  0001 C CNN
+	1    4200 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5050 2400 5300
+Wire Wire Line
+	2400 4500 2400 4850
+Wire Wire Line
+	2400 3900 2400 4200
+$Comp
+L power:GND #PWR0103
+U 1 1 5F9D5EB9
+P 3050 3150
+F 0 "#PWR0103" H 3050 2900 50  0001 C CNN
+F 1 "GND" H 3055 2977 50  0000 C CNN
+F 2 "" H 3050 3150 50  0001 C CNN
+F 3 "" H 3050 3150 50  0001 C CNN
+	1    3050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5F9D582C
+P 2400 3900
+F 0 "#PWR0102" H 2400 3750 50  0001 C CNN
+F 1 "+12V" H 2415 4073 50  0000 C CNN
+F 2 "" H 2400 3900 50  0001 C CNN
+F 3 "" H 2400 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F9D50B3
+P 2400 5300
+F 0 "#PWR0101" H 2400 5050 50  0001 C CNN
+F 1 "GND" H 2405 5127 50  0000 C CNN
+F 2 "" H 2400 5300 50  0001 C CNN
+F 3 "" H 2400 5300 50  0001 C CNN
+	1    2400 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F9D473A
+P 2400 4950
+F 0 "R1" H 2459 4996 50  0000 L CNN
+F 1 "510Ω" H 2459 4905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2400 4950 50  0001 C CNN
+F 3 "~" H 2400 4950 50  0001 C CNN
+	1    2400 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F9D2E05
+P 2400 4350
+F 0 "D1" V 2439 4233 50  0000 R CNN
+F 1 "LED" V 2348 4233 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 2400 4350 50  0001 C CNN
+F 3 "~" H 2400 4350 50  0001 C CNN
+	1    2400 4350
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
